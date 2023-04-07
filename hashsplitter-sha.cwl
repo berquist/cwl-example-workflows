@@ -18,7 +18,7 @@ inputs:
       position: 1
 
 outputs:
-  - id: output
+  - id: sha_output
     type: stdout
 
 stdout: sha

@@ -27,7 +27,7 @@ steps:
     in:
       - { id: input, source: input }
     out:
-      - { id: output }
+      - { id: sha_output }
 
   - id: whirlpool
     run: hashsplitter-whirlpool.cwl
@@ -40,7 +40,7 @@ steps:
     run: hashsplitter-unify.cwl
     in:
       - { id: md5, source: md5/output }
-      - { id: sha, source: sha/output }
+      - { id: sha, source: sha/sha_output }
       - { id: whirlpool, source: whirlpool/output }
     out:
       - { id: output }
