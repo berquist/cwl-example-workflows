@@ -8,7 +8,7 @@ doc: "unify hashed values into a single output"
 
 hints:
   DockerRequirement:
-    dockerPull: frolvlad/alpine-bash
+    dockerPull: frolvlad/alpine-bash:latest
 
 inputs:  
   md5:

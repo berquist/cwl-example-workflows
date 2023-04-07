@@ -16,28 +16,28 @@ outputs:
 
 steps:
   - id: md5
-    run: hashsplitter-md5.cwl.yml
+    run: hashsplitter-md5.cwl
     in:
       - { id: input, source: input }
     out:
       - { id: output }
 
   - id: sha
-    run: hashsplitter-sha.cwl.yml
+    run: hashsplitter-sha.cwl
     in:
       - { id: input, source: input }
     out:
       - { id: output }
 
   - id: whirlpool
-    run: hashsplitter-whirlpool.cwl.yml
+    run: hashsplitter-whirlpool.cwl
     in:
       - { id: input, source: input }
     out:
       - { id: output }
 
   - id: unify
-    run: hashsplitter-unify.cwl.yml
+    run: hashsplitter-unify.cwl
     in:
       - { id: md5, source: md5/output }
       - { id: sha, source: sha/output }

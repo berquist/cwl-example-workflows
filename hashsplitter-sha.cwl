@@ -1,18 +1,14 @@
 #!/usr/bin/env cwl-runner
 
 cwlVersion: v1.0
+
 class: CommandLineTool
 
-doc: "hash input through md5"
+doc: "hash input through sha"
 
 hints:
   - class: DockerRequirement
-    dockerPull: kubler/openssl
-  
-  - class: ResourceRequirement
-    coresMin: 1
-    ramMin: 2
-    outdirMin: 1
+    dockerPull: kubler/openssl:20230330
 
 inputs:
   - id: input
@@ -25,8 +21,8 @@ outputs:
   - id: output
     type: stdout
 
-stdout: md5
+stdout: sha
 
 baseCommand: ["openssl", "dgst"]
 
-arguments: ["-md5"]
+arguments: ["-sha1"]
