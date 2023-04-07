@@ -10,5 +10,5 @@ For demo use the following files:
 Execution with cwl-tes:
 
 ```bash
-bash run_example_tesk.sh 
+bash run_example_tesk.sh
 ```

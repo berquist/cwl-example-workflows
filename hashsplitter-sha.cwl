@@ -4,7 +4,7 @@ cwlVersion: v1.2
 
 class: CommandLineTool
 
-doc: "hash input through sha"
+doc: "hash input through sha1"
 
 hints:
   - class: DockerRequirement

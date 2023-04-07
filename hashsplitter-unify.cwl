@@ -10,7 +10,7 @@ hints:
   DockerRequirement:
     dockerPull: frolvlad/alpine-bash:latest
 
-inputs:  
+inputs:
   md5:
     type: File
     inputBinding:

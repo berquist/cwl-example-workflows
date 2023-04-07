@@ -1,6 +1,7 @@
 #!/usr/bin/env cwl-runner
 
 cwlVersion: v1.2
+
 class: CommandLineTool
 
 doc: "hash input through md5"
@@ -8,7 +9,7 @@ doc: "hash input through md5"
 hints:
   - class: DockerRequirement
     dockerPull: kubler/openssl:20230330
-  
+
   - class: ResourceRequirement
     coresMin: 1
     ramMin: 2
